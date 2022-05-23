@@ -14,11 +14,11 @@ var query = new URLSearchParams(location.search);
 
 // Create array of possible links
 var randomlinks=new Array()
-
-randomlinks[0]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + query.toString()
-randomlinks[1]="https://www.surveymonkey.co.uk/r/P7JJ5DR?" + query.toString()
-randomlinks[2]="https://www.surveymonkey.co.uk/r/H7S7YGT?" + query.toString()
-randomlinks[3]="https://www.surveymonkey.co.uk/r/P7R8HST?" + query.toString()
+// query.toString()
+randomlinks[0]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + location.search;
+randomlinks[1]="https://www.surveymonkey.co.uk/r/P7JJ5DR?" + location.search;
+randomlinks[2]="https://www.surveymonkey.co.uk/r/H7S7YGT?" + location.search;
+randomlinks[3]="https://www.surveymonkey.co.uk/r/P7R8HST?" + location.search;
 
 // Establish a random link
 function randomlink(){

@@ -11,28 +11,27 @@
 // Extract URL Query from incoming URL
 var query = new URLSearchParams();
 
+// Create array of possible links
 var randomlinks=new Array()
 
 randomlinks[0]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + query.toString()
-randomlinks[1]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + query.toString()
-randomlinks[2]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + query.toString()
-randomlinks[3]="https://www.surveymonkey.co.uk/r/BV6JGMR?" + query.toString()
+randomlinks[1]="https://www.surveymonkey.co.uk/r/P7JJ5DR?" + query.toString()
+randomlinks[2]="https://www.surveymonkey.co.uk/r/H7S7YGT?" + query.toString()
+randomlinks[3]="https://www.surveymonkey.co.uk/r/P7R8HST?" + query.toString()
 
+// Establish a random link
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-//-->
 
-//window.open(randomlink(), '_self');
+// Alternative approach: Window open: window.open(randomlink(), '_self');
 function redirect() {
 window.location.replace(randomlinks[Math.floor(Math.random()*randomlinks.length)]);
 }
 </script>
+
 <form method="post">
 <p><input type="button" name="B1" value="Link to Survey Questionnaire >>" onclick="randomlink()"></p> </form>
 
-<!--Uncomment below to use a regular text link instead
-<a href="javascript:randomlink()">Random Link</a>
--->
   </body>
 </html>

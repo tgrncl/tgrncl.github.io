@@ -9,7 +9,8 @@
 <!--
 
 // Extract URL Query from incoming URL
-var query = new URLSearchParams();
+var queryString = location.search;
+var query = new URLSearchParams(location.search);
 
 // Create array of possible links
 var randomlinks=new Array()
